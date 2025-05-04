@@ -4,7 +4,7 @@ const { POManager } = require("../pageobject/POManager");
 const dataset = JSON.parse(JSON.stringify(require("../utils/test.json")));
 const { config } = require("dotenv");
 
-test("E22 TC1", async ({ page }) => {
+test.only("E22 TC1", async ({ page }) => {
   const poManager = new POManager(page);
   const loginPage = poManager.getLoginPage();
   const homePage = poManager.getHomePage();

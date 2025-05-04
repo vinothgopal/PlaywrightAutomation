@@ -7,6 +7,7 @@
     "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
+      "plugin:no-only-tests/recommended",  // ✅ Add this line
       "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -14,11 +15,11 @@
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "no-only-tests"],  // ✅ Add the plugin
     "rules": {
-      "no-unused-vars": "warn",
+      "no-console": "off",
       "@typescript-eslint/no-unused-vars": "warn",
-      "no-console": "off"
+      "no-only-tests/no-only-tests": "error"  // ✅ Enforce rule
     },
     "ignorePatterns": [
       "dist/",
