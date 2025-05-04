@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+commit_msg_file=$1
+commit_msg=$(cat "$commit_msg_file")
+
+if ! echo "$commit_msg" | grep -Eq '^(test|chore|feat|fix|docs|style|refactor|perf|ci): .+'; then
+  echo "❌ Commit message must start with a valid type (e.g., test:, chore:, feat:, etc.)"
+  exit 1
+fi
