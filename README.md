@@ -34,23 +34,15 @@ This sets up:
 ### ▶ Run All Tests (Headed Mode)
 
 ```bash
-npm run regresion
+npm run regression
 ```
 
-> Note: Typo in script key: consider renaming `"regresion"` to `"regression"` in `package.json` for consistency.
 
 ### ✅ Run Sanity Suite
 
 ```bash
 npm run sanity
 ```
-
-This runs tests tagged with `@sanity`:
-
-```js
-test('Login test @sanity', async ({ page }) => {
-  // test steps
-});
 ```
 
 ### 🧼 Format Code
@@ -144,11 +136,6 @@ PlaywrightAutomation/
 * Use `npx playwright test --help` to explore more CLI options
 * Update test tags (`@sanity`, `@regression`) to filter execution dynamically
 
----
-
-## 📌 License
-
-This project is licensed under the ISC License.
 
 ---
 

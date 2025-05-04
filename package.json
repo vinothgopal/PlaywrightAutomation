@@ -4,7 +4,7 @@
   "description": "npm init playwright@latest",
   "main": "index.js",
   "scripts": {
-    "regresion": "npx playwright test --headed ",
+    "regression": "npx playwright test --headed ",
     "sanity": "npx playwright test --headed --grep @sanity",
     "format": "prettier --write '**/*.{js,json}'",
     "prepare": "husky install"
