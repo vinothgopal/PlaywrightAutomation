@@ -1,0 +1,28 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "npm init playwright@latest",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+     "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinothgopal/PlaywrightAutomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinothgopal/PlaywrightAutomation/issues"
+  },
+  "homepage": "https://github.com/vinothgopal/PlaywrightAutomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3"
+  }
+}
